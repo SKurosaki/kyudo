@@ -1,0 +1,625 @@
+
+body{
+  text-align: center;
+  background-color:#333366;
+  color: #333;
+  font-family: "ＭＳ Ｐゴシック",sans-serif;
+}
+
+/*リンク関連*/
+a{/*リンクされた文字*/
+  color: #0000ff;
+  text-decoration: underline;
+}
+a:link {/*未訪問のリンク*/
+  color: #4169E1;
+  text-decoration: underline;
+}
+a:visited {/*訪問後のリンク*/
+  color: #4169E1;
+  text-decoration: underline;
+}
+a:hover {/*マウスをのせたとき*/
+  color: #1E90FF;
+  text-decoration: underline;
+}
+a:active {/*クリック中*/
+  text-decoration: none;
+}
+
+
+/* 更新履歴リスト*/
+dt {
+  margin: 0 0 0 20px;
+  padding: 0;
+  color: #013461;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+dd {
+  margin:0 0 0 50px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+/* フッターのアドレス*/
+.address{
+  clear: left;
+}
+
+
+
+
+
+
+/* newwwwwwww */
+
+/*ーーーーーーーー
+　　　　PC
+ーーーーーーーー*/
+
+.body{
+  width: 100%;
+}
+.header{
+  width: 950px;
+  margin: auto;
+}
+.header-contents{
+  width: 950px;
+  margin: 0 30px 0;
+}
+/*校章*/
+.header-content-emblem{
+  float: left;
+  background-color: #e6e6fa;
+  width: 240px;
+  height: 135px;
+}
+.emblem{
+  margin: 18px auto;
+ }
+/*上部メニューバー*/
+.header-content-menu{
+  display: block;
+  background-color: #e6e6fa;
+  width: 770px;
+  height: 135px;
+  padding: 0;
+  text-align: left;
+  margin: 0 0 0 240px;
+}
+.menu-list{
+  list-style-type: none;
+  margin: 5px 0 10px;
+  padding: 3px 0 0;
+  width: 770px;
+}
+.sns-list{
+  text-align: left;
+  padding: 0px;
+}
+.header-content-menu li{
+  display: inline-block;
+  padding: 0;
+  margin: -1px -3px -2px 0;
+}
+.header-content-menu a{
+  text-decoration: none;
+  margin: 0 auto;
+}
+/*上部メニューバー：メニューボタン*/
+.menu {
+  display: inline-block;
+  width: 120px !important;
+  height: 65px  !important;
+  text-align: left;
+  text-decoration: none;
+  font-size: 14px;
+  text-indent: 5px;
+  line-height: 60px;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  color: #333;
+  line-height: 50px;
+  overflow: hidden;
+}
+  .menu::before,
+  .menu::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+  }
+  .menu,
+  .menu::before,
+  .menu::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+  }
+  .menu:hover {
+    color: #fff;
+  }
+  .menu:hover::after {
+    top: 0;
+    background-color: #333366;
+  }
+
+/*上部メニュー色*/
+  .menu_01:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_02:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_03:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_04:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_05:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_06:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_07:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_08:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_09:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_10:hover::after {
+    background-color: #3399ff;
+  }
+  .menu_11:hover::after {
+    background-color: #3399ff;
+  }
+
+
+
+menu_01{
+  word-wrap: break-word;
+}
+
+
+
+.sns{
+  clear: left;
+  display: block;
+}
+.sns-list{
+    width: 120px;
+    height: 65px;
+    display: table;
+}
+.share{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 左側情報 */
+.side{
+  float: left;
+  width: 240px;
+  background-color: #e6e6fa;
+  margin: 0 0 0 30px;
+}
+
+.side-bar_title{
+  background-color:#013461;
+  color: #FFF;
+  font-size: 23px;
+  font-family: ヒラギノ;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.side-bar_description_01{
+  font-size: 10px;
+  font-family: ヒラギノ;
+  text-align: left;
+  height: 152px;
+  overflow: scroll; 
+  overflow-x: hidden;
+}
+.side-bar_description_02{
+  height: 360px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* メイン */
+main{
+  float: left;
+  background-color :#999;
+  width: 770px;
+  height: 577px;
+  padding: 0;
+}
+
+/* フッター */
+footer{
+  clear: left;
+  background-color :#333366;
+  width: 100%;
+  margin: 0 0 0 30px;
+}
+
+/*ーーーーーーーー
+　　PC~tablet
+ーーーーーーーー*/
+@media screen and (max-width:1065px){
+/*校章*/
+.header-content-emblem{
+  float: left;
+  background-color: #e6e6fa;
+  width: 90px;
+  height: 135px;
+}
+ .emblem{
+   margin:25px auto;
+   width: 80px !important;
+   height: 80px !important;
+   }
+
+/*上部メニューバー*/
+.header-content-menu{
+  float: left;
+  background-color: #e6e6fa;
+  width: 730px;
+  height: 135px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+
+}
+ .menu-list{
+   list-style-type: none;
+   text-align: left;
+   padding: 0;
+   width: 735px;
+   margin: 3px auto;
+ }
+  .header-content-menu li{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    margin: -1px -3px -2px 0;
+  }
+  .header-content-menu a{
+    text-decoration: none;
+    margin: 0 auto;
+  }
+
+.sns{
+  clear: left;
+  display: block;
+}
+
+/* 左側情報 */
+.side{
+  width: 210px;
+}
+.side-bar_description_02{
+  height: 240px;
+}
+
+/* メイン */
+main{
+  width: 610px;
+  height: 458px;
+}
+
+
+
+}
+/*ーーーーーーーー
+　　tablet
+ーーーーーーーー*/
+@media screen and (max-width:875px){
+/*校章*/
+.header-content-emblem{
+  float: left;
+  background-color: #e6e6fa;
+  width: 60px;
+  height: 200px;
+}
+ .emblem{
+   margin:75px auto;
+   width: 50px !important;
+   height: 50px !important;
+   }
+
+/*上部メニューバー*/
+.header-content-menu{
+  float: left;
+  background-color: #e6e6fa;
+  width: 500px;
+  height: 200px;
+  padding: 0;
+  text-align: left;
+
+}
+ .menu-list{
+   list-style-type: none;
+   text-align: left;
+   padding: 0;
+   margin: 8px auto;
+   width: 500px;
+ }
+.sns-list{
+   width: 120px;
+   height: 60px;
+   display: table;
+   text-align: left;
+   padding: 0px;
+ }
+  .header-content-menu li{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    margin: -1px -3px -2px 0;
+  }
+  .header-content-menu a{
+    text-decoration: none;
+    margin: 0 auto;
+  }
+/*上部メニューバー：メニューボタン*/
+  .menu {
+    display: inline-block;
+    width: 120px !important;
+    height: 60px  !important;
+    text-align: left;
+    text-decoration: none;
+    font-size: 13px;
+    text-indent: 5px;
+    line-height: 60px;
+    outline: none;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    color: #333;
+    line-height: 50px;
+    overflow: hidden;
+  }
+  .menu::before,
+  .menu::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+  }
+  .menu,
+  .menu::before,
+  .menu::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+  }
+  .menu:hover {
+    color: #fff;
+  }
+  .menu:hover::after {
+    top: 0;
+    background-color: #333;
+  }
+
+.sns{
+  clear: left;
+  display: block;
+}
+
+/* 左側情報 */
+.side{
+  clear: left;
+  width: 560px;
+  background-color: #e6e6fa;
+  margin: 0 0 0 30px;
+}
+.side_contents{
+  margin: 0 auto;
+  width: 265px;
+  height: 300px;
+  display: inline-block;
+}
+.side-bar_description_01{
+  height: 250px;
+}
+.side-bar_description_02{
+  height: 250px;
+}
+
+/* メイン */
+main{
+  float: left;
+  background-color :#999;
+  width: 560px;
+  height: 420px;
+  margin: 0 0 0 30px;
+}
+
+
+}
+/*ーーーーーーーー
+　smartphone
+ーーーーーーーー*/
+@media screen and (max-width:640px){
+/*スマホメニューボタン*/
+#sp_button {
+    display:none; /*通常時は非表示にしておきます*/
+    position:absolute; /*bodyに対しての絶対位置指定です*/
+    right:13px;
+    top:13px;
+    width:30px;
+    height:25px;
+    cursor:pointer}
+#sp_button div {position:relative} /*spanの絶対位置指定の親にします*/
+#sp_button span {
+    display:block;
+    position:absolute; /*#sp_button
+   div に対して*/
+    width:100%;
+    border-bottom:solid 3px #999;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out}
+#sp_button span:nth-child(1) {top:0}
+#sp_button span:nth-child(2) {top:11px}
+#sp_button span:nth-child(3) {top:22px}
+
+
+/*memo*/
+
+/*header footer*/
+header{   
+    width:100%;
+    z-index:2;
+    position:fixed;
+    background:rgba(255,255,255,.7)}
+
+footer{
+    width:100%;
+    z-index:2;
+    position:fixed;
+    background:rgba(255,255,255,.7);
+    margin: 0 auto;
+    padding: 0;
+    }
+
+/*header menu*/
+header {
+    display:table;
+    font-size:0; /*ul,liが親のfont-sizeを継承して隙間が空くのをリセット*/
+    line-height:0}
+header .logo, nav {
+    display:table-cell}
+nav {
+    text-align:right;
+    vertical-align:bottom}
+header .logo a img {
+    height:40px;
+    margin:10px}
+header .menu-list {
+    font-size:13px;
+    line-height:1;
+    margin:0 10px 10px 0}
+header .menu-list li {
+    margin-left:3px;
+    display:inline-block}
+header .menu-list li::after {content:' |'}
+header .menu-list li:last-child::after {content:''}
+header .menu-list a {color:inherit}
+
+/*header menu*/
+　/*nav要素は絶対位置指定にして、ビューの外側に置いて見えなくします。
+　　nav の中の ul li は横並びを解除して縦組みにレイアウトし直します。*/
+header nav {
+    position: absolute; /*bodyに対しての絶対位置*/
+    right:0;
+    top: -300px; /*通常時はビュー外*/
+    background:rgba(255,255,255,.7);
+    width:50%;
+    padding:0 10px;
+    -webkit-transition:.5s ease-in-out; /*transitionで動きを*/
+    -moz-transition:.5s ease-in-out;
+    transition:.5s ease-in-out;
+    text-align:left}
+header .menu-list {margin:0}
+header .menu-list li {
+    display:block;
+    margin:0;
+    border-bottom:dotted 1px #fff;
+    line-height:3}
+header .menu-list li a {display:block}
+header .menu-list li::after {content:''}
+header .menu-list li:last-child {border-bottom:none}
+ 
+
+.header-content-emblem{
+  display: none;
+}
+
+
+.menu {
+  display: inline-block;
+  width: 100% !important;
+  height: 50px  !important;
+  text-align: left;
+  text-decoration: none;
+  font-size: 14px;
+  text-indent: 5px;
+  line-height: 60px;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  color: #333;
+  opacity: 0.8;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+
+
+
+/* Toggle(Button) */
+/*display:noneだったボタンを display:blockにして表示します*/
+#sp_button {display:block}
+ 
+/* Click Toggle(Button) */
+　/*ここから jQueryで header要素に付けた「.openNav」を利用します*/
+　/*.openNavが付いた要素内のボタン（#sp_button）内のspanへの指定*/
+　/*最初のspanをマイナス45度に*/
+.openNav #sp_button span:nth-child(1) {
+    top: 11px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg)}
+　/*2番目と3番目のspanを45度に*/
+.openNav #sp_button span:nth-child(2),
+.openNav #sp_button span:nth-child(3) {
+    top: 11px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg)}
+ 
+/*header menu*/
+　/*.openNavが付いた要素の中のnavを 縦方向に351px移動（=表示される）*/
+.openNav nav {
+    -moz-transform: translateY(351px);
+    -webkit-transform: translateY(351px);
+    transform: translateY(351px)}
+
+
+main{
+  width: 100%;
+}
+header{
+  width: 100%;
+  display: table;
+}
+
+header .logo{
+  width: 100%;
+  display: table-cell;
+}
+  }

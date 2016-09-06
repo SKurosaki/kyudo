@@ -1,0 +1,427 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="ja">
+
+<head>
+
+
+<!-- HPの状況把握を常にしておきたいので、編集される際には51代HP管理係まで連絡おねがいします-->
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="description" content="成城大学体育会弓道部の公式ホームページ。活動内容の紹介や、写真館、幹部ブログ、弓道辞書、掲示板など多彩なコンテンツを提供。">
+	<meta http-equiv="keywords" content="成城大学,成城,部活,弓道,弓道部,体育会,写真館,写真,辞書,管理人,ぼやき,ブログ,道場,弓道場,新入生,掲示板,全関,全日,四大戦,世田谷区,自己紹介,射法,射法八節">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<title>成城大学体育会弓道部</title>
+
+	
+<style type="text/css">
+<!--
+
+
+body{
+     text-align: center;
+     margin-top: 0;
+     margin-left: 0;
+     margin-right: 0;
+     padding-top: 0;
+     padding-left: 0;
+     padding-right: 0;
+     background-color:#333366;
+     }
+
+
+/* 書体*/
+td {
+font-family: "ＭＳ Ｐゴシック",sans-serif;
+}
+
+a{/*リンクされた文字*/
+    color:0000ff;
+    text-decoration:underline;
+}
+a:link {/*未訪問のリンク*/
+    color:#4169E1;
+    text-decoration:underline;
+}
+a:visited {/*訪問後のリンク*/
+    color:#333366;
+    text-decoration:underline;
+}
+a:hover {/*マウスをのせたとき*/
+    color:#1E90FF;
+    text-decoration:underline;
+}
+a:active {/*クリック中*/
+    text-decoration:none;
+}
+
+
+/*＜p＞とついているもの*/
+<table class="p">
+table.p {
+border-collapse:collapse:0;
+border:0px;
+margin-top:0;
+margin-bottom:0;
+}
+
+table.p tr td {
+padding:1px;
+}
+
+
+/*メニューボックステーブル上部*/
+td { padding: 1px; }
+tr { padding: 1px; }
+png{
+    vertical-align:bottom;
+    line-height:1px;
+}
+td{
+    line-height:1;
+    font-size:0px; /* for IE's Bug? */
+}
+
+ /*部活動紹介*/
+a.aa{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26bukatsusyoukai.png) no-repeat 0 0;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.aa:hover {
+	background-position: 0 bottom;
+
+}
+
+/*活動日程*/
+a.b{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26katsudou.png) no-repeat 0 0;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.b:hover {
+	background-position: 0 bottom;
+}
+
+/*幹部紹介*/
+a.c{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26kanbu.png) no-repeat 0 0;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.c:hover {
+	background-position: 0 bottom;
+}
+
+/* 報告用掲示板*/
+a.d{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26houkokuyou.png) no-repeat 0 0;
+        -webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.d:hover {
+	background-position: 0 bottom;
+}
+
+/*交流用掲示板*/
+a.e{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26kouryuyou.png) no-repeat 0 0;
+        -webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.e:hover {
+	background-position: 0 bottom;
+}
+
+/*お問い合わせ*/
+a.f{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26mail.png) no-repeat 0 0;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.f:hover {
+	background-position: 0 bottom;
+}
+
+/*新入生へ*/
+a.aaa{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26shinnyusei.png) no-repeat 0 0;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.aaa:hover {
+	background-position: 0 bottom;
+}
+
+/*写真館*/
+a.bb{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26shashinkan.png) no-repeat 0 0;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.bb:hover {
+	background-position: 0 bottom;
+}
+
+/*幹部ブログ*/
+a.cc{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26kanbublog.png) no-repeat 0 0;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.cc:hover {
+	background-position: 0 bottom;
+}
+
+/*弓道部辞書*/
+a.dd{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26kyudoubujisyo.png) no-repeat 0 0;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.dd:hover {
+	background-position: 0 bottom;
+}
+
+/*リンク*/
+a.ee{
+	display: block;
+	width: 120px;
+	height: 60px;
+	background: url(img/h26link.png) no-repeat 0 0;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+	     -o-transition: 0.2s ease-in-out;
+	        transition: 0.2s ease-in-out;
+}
+a.ee:hover {
+	background-position: 0 bottom;
+}	
+	
+
+/*メニューボックステーブル左*/
+td.menu{
+    line-height:1;
+font-size:12px;
+}
+
+/* 更新履歴リスト*/
+dt {
+margin:0;
+padding:0;
+color:#013461;
+font-size:large;
+line-height:1.5em;
+}
+dd {
+margin:0 0 0 2em;
+padding: 0;
+white-space: normal;
+font-size:medium;
+line-height:1.5em;
+}
+
+
+
+
+
+
+-->
+
+</style>
+</head>
+
+<body>
+<p class="head">
+<td class="tdmenu">
+<p class="menu">
+
+<img src="gif/logo.gif" alt="成城大学体育会弓道部" width="512" height="64" align="left">
+
+<table border="1" cellspacing="1" cellpadding="1" align="left">
+　　<tr>
+<td width="100" bgcolor="#e6e6fa" class="menu"><a href="http://www.geocities.jp/seijo_kyudo2000/"><img src="img/gakuenImgKosyo.png"class="koushou" alt="校章" width="100" height="100"></a></td>
+
+
+　　　　<td width="200" bgcolor="#e6e6fa" class="menu"><table style="border-collapse:collapse;border:none;">
+
+<tr><td><p><a href="http://www.seijo.ac.jp/students/club/clublist/tai005.html"class="aa"  TARGET="_blank"></a></p></td>
+
+<td><p><a href="katsudou2014.html"class="b"></a></p></td>
+
+<td><p><a href="52-kanbu.html"class="c"></a></p></td>
+
+<td><p><a href="http://www1.ezbbs.net/39/seijo_kyudo/"class="d"></a></p></td>
+
+<td><p><a href="http://9001.teacup.com/seijo_kyudo2000/bbs"class="e"></a></p></td>
+
+<td><p><a href="mailto:seijo_kyudo2000@yahoo.co.jp"class="f"></a></p></td></tr><tr><td><p><a href="shinnyusei.html"class="aaa"></a></p></td>
+
+<td><p><a href="http://photozou.jp/photo/album/2470348"class="bb" TARGET="_blank"></a></p></td></li>
+
+<td><p><a href="http://seijokanbu.wordpress.com/"class="cc" TARGET="_blank"></a></p></td>
+
+<td><p><a href="jisho.html"class="dd"></a></p></td>
+
+<td><p><a href="link.html"class="ee"></a></p></td>
+
+<td  align="left" valign="top"><p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.geocities.jp/seijo_kyudo2000/" data-lang="ja">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br>
+
+
+<iframe src="//www.facebook.com/plugins/like.php?href=http://www.geocities.jp/seijo_kyudo2000/;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" width="100" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe><br>
+
+
+<a href="http://line.naver.jp/R/msg/text/?http://www.geocities.jp/seijo_kyudo2000/"><img src="img/h26linebutton.png" width="80" height="20" alt="LINEで送る" /></a></p></td>
+
+</tr>
+</table>
+
+<tr>
+　　　　<td width="200" bgcolor="#e6e6fa" class="menu" align="left" valign="top"><div class="section">
+<img src="img/h26goannai.png" alt="ご案内" width="250" height="30">
+<div style="overflow:auto;width:250px;height:8em;">
+<p>
+
+
+■<a href="q_a-kari.html">【Ｑ＆Ａ】</a>は入部を考えている方向けに<br>
+Q＆A形式で部活動紹介を行っている<br>
+コーナーです<br><br>
+ その他質問があれば、<br>
+交流用掲示板・メールで受け付けております<br>
+</p>
+</div>
+</div></td>
+
+
+
+
+   　　   <td bgcolor="#e6e6fa" class="graf"rowspan="2" width="200"><SCRIPT language="JavaScript"> 
+<!-- 
+// ランダム に画像を表示する 
+img = new Array(); 
+img[0] = "img/TOP1.JPG"; 
+img[1] = "img/TOP2.jpg"; 
+
+n = Math.floor(Math.random()*img.length); 
+document.write("<img src ='"+img[n]+"' border='0'  width='720'>");
+//--> 
+</SCRIPT> </td>
+　　</tr>
+
+
+
+<tr>
+ <td bgcolor="#e6e6fa" width="200" height="15" class="menu" align="left" valign="top"><div class="section">
+
+<img src="img/h26koushin.png" alt="更新情報" width="250" height="30">
+
+<div style="overflow:auto;width:245px;height:28em;">
+<p>
+
+<!-- 更新情報は長くなるとHTMLごちゃっとするので最大５件まで -->
+<dt>2014/11/14</dt>
+<dd>新幹部を掲載しました。</dd>
+
+<dt>2014/10/28</dt>
+<dd>活動日程に簡易結果とリーグ戦情報を掲載しました。</dd>
+
+<dt>2014/10/26</dt>
+<dd>報告用掲示板にリーグ戦入替戦の試合結果を掲載しました。
+
+<dt>2014/10/19</dt>
+<dd>活動日程に簡易結果とリーグ戦情報を掲載しました。</dd>
+
+<dt>2014/10/12</dt>
+<dd>報告用掲示板にリーグ戦第5週の試合結果を掲載しました。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</div>
+</div></td></tr>
+　</table>
+
+
+<br>
+<br clear="all">
+<br>
+<address>
+Copyright(C) <a href="mailto:seijo_kyudo2000@yahoo.co.jp">SEIJO Univ. Kyudo-Club</a>. All rights reserved.
+</address>
+
+
+
+</body>
+</html>
