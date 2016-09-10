@@ -1,7 +1,7 @@
 
 body{
   text-align: center;
-  background-color:#333366;
+  background-color:#525C91;
   color: #333;
   font-family: "ＭＳ Ｐゴシック",sans-serif;
 }
@@ -62,18 +62,24 @@ dd {
 .body{
   width: 100%;
 }
-.header{
-  width: 950px;
-  margin: auto;
+
+  header{
+  width: 1010px;
+  background-color: #070F3A ;
+  margin: 0 0 0 30px;
+}
+.logo{
+  width: 600px;
+  margin: 0 auto;
 }
 .header-contents{
   width: 950px;
-  margin: 0 30px 0;
+  margin: 0;
 }
 /*校章*/
 .header-content-emblem{
   float: left;
-  background-color: #e6e6fa;
+  background-color: #fff;
   width: 240px;
   height: 135px;
 }
@@ -83,7 +89,7 @@ dd {
 /*上部メニューバー*/
 .header-content-menu{
   display: block;
-  background-color: #e6e6fa;
+  background-color: #fff;
   width: 770px;
   height: 135px;
   padding: 0;
@@ -92,18 +98,19 @@ dd {
 }
 .menu-list{
   list-style-type: none;
-  margin: 5px 0 10px;
-  padding: 3px 0 0;
+  margin: 0;
+  padding: 0;
   width: 770px;
 }
 .sns-list{
   text-align: left;
+  display: list-item;
   padding: 0px;
 }
 .header-content-menu li{
   display: inline-block;
   padding: 0;
-  margin: -1px -3px -2px 0;
+  margin: 1px -3px -2px 0;
 }
 .header-content-menu a{
   text-decoration: none;
@@ -151,7 +158,7 @@ dd {
   }
   .menu:hover::after {
     top: 0;
-    background-color: #333366;
+    background-color: #525C91;
   }
 
 /*上部メニュー色*/
@@ -207,25 +214,28 @@ menu_01{
     display: table;
 }
 .share{
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
 }
 
 /* 左側情報 */
 .side{
   float: left;
   width: 240px;
-  background-color: #e6e6fa;
   margin: 0 0 0 30px;
 }
 
 .side-bar_title{
-  background-color:#013461;
+  background-color: #070F3A;
   color: #FFF;
   font-size: 23px;
   font-family: ヒラギノ;
   padding: 5px;
   margin: 0 auto;
+}
+
+.side_contents{
+  background-color: #fff;
 }
 
 .side-bar_description_01{
@@ -235,17 +245,19 @@ menu_01{
   height: 152px;
   overflow: scroll; 
   overflow-x: hidden;
+  background-color: #fff;
 }
 .side-bar_description_02{
   height: 360px;
   overflow: scroll;
   overflow-x: hidden;
+  background-color: #fff;
 }
 
 /* メイン */
 main{
   float: left;
-  background-color :#999;
+  background-color: #525C91;
   width: 770px;
   height: 577px;
   padding: 0;
@@ -254,19 +266,18 @@ main{
 /* フッター */
 footer{
   clear: left;
-  background-color :#333366;
-  width: 100%;
+  width: 1010px;
   margin: 0 0 0 30px;
 }
 
 /*ーーーーーーーー
 　　PC~tablet
 ーーーーーーーー*/
-@media screen and (max-width:1065px){
+@media screen and (max-width:1073px){
 /*校章*/
 .header-content-emblem{
   float: left;
-  background-color: #e6e6fa;
+  background-color: #525C91;
   width: 90px;
   height: 135px;
 }
@@ -279,7 +290,7 @@ footer{
 /*上部メニューバー*/
 .header-content-menu{
   float: left;
-  background-color: #e6e6fa;
+  background-color: #525C91;
   width: 730px;
   height: 135px;
   padding: 0;
@@ -330,13 +341,18 @@ main{
 /*ーーーーーーーー
 　　tablet
 ーーーーーーーー*/
-@media screen and (max-width:875px){
+@media screen and (max-width:881px){
+body{
+  width: 100%;
+  margin: 0;
+}
+
 /*校章*/
 .header-content-emblem{
   float: left;
-  background-color: #e6e6fa;
+  background-color: #525C91;
   width: 60px;
-  height: 200px;
+  height: 250px;
 }
  .emblem{
    margin:75px auto;
@@ -345,11 +361,28 @@ main{
    }
 
 /*上部メニューバー*/
+header{
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  background-color: #070F3A;
+}
+
+header .logo{
+  width: 90%;
+}
+
+.header-contents{
+  width: 950px;
+  margin: 0 20px 0;
+  display: none;
+}
+
 .header-content-menu{
   float: left;
-  background-color: #e6e6fa;
+  background-color: #525C91;
   width: 500px;
-  height: 200px;
+  height: 250px;
   padding: 0;
   text-align: left;
 
@@ -358,9 +391,17 @@ main{
    list-style-type: none;
    text-align: left;
    padding: 0;
-   margin: 8px auto;
+   height: 90%;
+   margin: 12px auto;
    width: 500px;
  }
+
+.header-content-menu li{
+  display: inline-block;
+  padding: 5px 2px 0!important;
+  margin: 0 -1px;
+}
+
 .sns-list{
    width: 120px;
    height: 60px;
@@ -427,36 +468,64 @@ main{
   clear: left;
   display: block;
 }
+.sns-list{
+    width: 120px;
+    height: 60px!important;
+}
+.share{
+  height: 50%;
+}
 
 /* 左側情報 */
 .side{
   clear: left;
-  width: 560px;
-  background-color: #e6e6fa;
-  margin: 0 0 0 30px;
+  width: 100%;
+  background-color: #525C91;
+  margin: 0;
+  z-index: 1;
+  position: absolute;
+  top: 675px;
 }
 .side_contents{
-  margin: 0 auto;
-  width: 265px;
-  height: 300px;
+  margin: 10px 10px 0;
+  width: 45%;
+  height: 295px;
+  vertical-align: top;
   display: inline-block;
 }
+
+.side-bar_title{
+  height: 33px;
+  padding: 3px auto;
+}
+
 .side-bar_description_01{
   height: 250px;
 }
 .side-bar_description_02{
   height: 250px;
+  margin: 0 auto;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* メイン */
 main{
-  float: left;
-  background-color :#999;
-  width: 560px;
-  height: 420px;
-  margin: 0 0 0 30px;
+  width: 100%;
+  margin: 0;
+  z-index: 2;
+  position: absolute;
 }
 
+/* フッター */
+footer{
+  z-index: 4;
+  display: block;
+  width: 100%;
+  margin: 0;
+  top: 1000px;
+  position: absolute;
+}
 
 }
 /*ーーーーーーーー
@@ -464,162 +533,57 @@ main{
 ーーーーーーーー*/
 @media screen and (max-width:640px){
 /*スマホメニューボタン*/
-#sp_button {
-    display:none; /*通常時は非表示にしておきます*/
-    position:absolute; /*bodyに対しての絶対位置指定です*/
-    right:13px;
-    top:13px;
-    width:30px;
-    height:25px;
-    cursor:pointer}
-#sp_button div {position:relative} /*spanの絶対位置指定の親にします*/
-#sp_button span {
-    display:block;
-    position:absolute; /*#sp_button
-   div に対して*/
-    width:100%;
-    border-bottom:solid 3px #999;
-    -webkit-transition: .35s ease-in-out;
-    -moz-transition: .35s ease-in-out;
-    transition: .35s ease-in-out}
-#sp_button span:nth-child(1) {top:0}
-#sp_button span:nth-child(2) {top:11px}
-#sp_button span:nth-child(3) {top:22px}
+body{
+  margin: 0;
+  width: 100%;
+}
 
+.header-content-menu{
+  width: 100%;
+}
 
-/*memo*/
-
-/*header footer*/
-header{   
-    width:100%;
-    z-index:2;
-    position:fixed;
-    background:rgba(255,255,255,.7)}
-
-footer{
-    width:100%;
-    z-index:2;
-    position:fixed;
-    background:rgba(255,255,255,.7);
-    margin: 0 auto;
-    padding: 0;
-    }
-
-/*header menu*/
-header {
-    display:table;
-    font-size:0; /*ul,liが親のfont-sizeを継承して隙間が空くのをリセット*/
-    line-height:0}
-header .logo, nav {
-    display:table-cell}
-nav {
-    text-align:right;
-    vertical-align:bottom}
-header .logo a img {
-    height:40px;
-    margin:10px}
-header .menu-list {
-    font-size:13px;
-    line-height:1;
-    margin:0 10px 10px 0}
-header .menu-list li {
-    margin-left:3px;
-    display:inline-block}
-header .menu-list li::after {content:' |'}
-header .menu-list li:last-child::after {content:''}
-header .menu-list a {color:inherit}
-
-/*header menu*/
-　/*nav要素は絶対位置指定にして、ビューの外側に置いて見えなくします。
-　　nav の中の ul li は横並びを解除して縦組みにレイアウトし直します。*/
-header nav {
-    position: absolute; /*bodyに対しての絶対位置*/
-    right:0;
-    top: -300px; /*通常時はビュー外*/
-    background:rgba(255,255,255,.7);
-    width:50%;
-    padding:0 10px;
-    -webkit-transition:.5s ease-in-out; /*transitionで動きを*/
-    -moz-transition:.5s ease-in-out;
-    transition:.5s ease-in-out;
-    text-align:left}
-header .menu-list {margin:0}
-header .menu-list li {
-    display:block;
-    margin:0;
-    border-bottom:dotted 1px #fff;
-    line-height:3}
-header .menu-list li a {display:block}
-header .menu-list li::after {content:''}
-header .menu-list li:last-child {border-bottom:none}
- 
-
-.header-content-emblem{
+.header-contents{
   display: none;
 }
-
-
-.menu {
-  display: inline-block;
-  width: 100% !important;
-  height: 50px  !important;
-  text-align: left;
-  text-decoration: none;
-  font-size: 14px;
-  text-indent: 5px;
-  line-height: 60px;
-  outline: none;
-  position: relative;
-  z-index: 2;
-  background-color: #fff;
-  color: #333;
-  opacity: 0.8;
-  line-height: 50px;
-  overflow: hidden;
-}
-
-
-
-
-/* Toggle(Button) */
-/*display:noneだったボタンを display:blockにして表示します*/
-#sp_button {display:block}
- 
-/* Click Toggle(Button) */
-　/*ここから jQueryで header要素に付けた「.openNav」を利用します*/
-　/*.openNavが付いた要素内のボタン（#sp_button）内のspanへの指定*/
-　/*最初のspanをマイナス45度に*/
-.openNav #sp_button span:nth-child(1) {
-    top: 11px;
-    -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-    transform:rotate(-45deg)}
-　/*2番目と3番目のspanを45度に*/
-.openNav #sp_button span:nth-child(2),
-.openNav #sp_button span:nth-child(3) {
-    top: 11px;
-    -webkit-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-    transform:rotate(45deg)}
- 
-/*header menu*/
-　/*.openNavが付いた要素の中のnavを 縦方向に351px移動（=表示される）*/
-.openNav nav {
-    -moz-transform: translateY(351px);
-    -webkit-transform: translateY(351px);
-    transform: translateY(351px)}
-
-
 main{
   width: 100%;
+  height: auto;
+  margin: 0 !important;
+  position: absolute;
+  display: block;
+  z-index: 2;
 }
-header{
+.side{
   width: 100%;
-  display: table;
+  margin: 75% 0 0;
+  background-color: #525C91;
+  display: block;
+  top: 10% !important;
+  z-index: 3;
 }
 
-header .logo{
-  width: 100%;
-  display: table-cell;
+.side_contents{
+  width: 90%;
+  margin: 0 auto;
 }
+
+.side-bar_description_01{
+  height: 250px;
+  background-color: #fff;
+  display: block;
+}
+.side-bar_description_02{
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+footer{
+  width:100%;
+  text-align: center;
+  font-size: 10px;
+  margin: 0;
+  z-index: 4;
+}
+
   }

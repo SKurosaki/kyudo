@@ -6,16 +6,18 @@
   <meta http-equiv="description" content="成城大学体育会弓道部の公式ホームページ。活動内容の紹介や、写真館、幹部ブログ、弓道辞書、掲示板など多彩なコンテンツを提供。">
   <meta http-equiv="keywords" content="成城大学,成城,部活,弓道,弓道部,体育会,写真館,写真,辞書,管理人,ぼやき,ブログ,道場,弓道場,新入生,掲示板,全関,全日,四大戦,世田谷区,自己紹介,射法,射法八節">
   <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="Content-Style-Type" content="text/css">
+  <script src="JavaScript/main.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>
-    //スマホ対応用のコード
     $(function() {
-      $('#sp_ｂｕｔｔｏｎ').click(function(){
-        $('header').toggleClass('openNav');
+      $('#navToggle').click(function(){//headerに .openNav を付加・削除
+          $('header').toggleClass('openNav');
       });
-     });
+    });
   </script>
   <title>成城大学体育会弓道部</title>
 </head>
@@ -23,10 +25,10 @@
   <header>
   <!-- ぺージ上部のメニュー -->
     <a href="http://www.geocities.jp/seijo_kyudo2000/">
-      <img  class="logo" src="http://www.geocities.jp/seijo_kyudo2000/gif/logo.gif" alt="成城大学体育会弓道部">
+      <img class="logo" src="img/header.jpg" alt="成城大学体育会弓道部">
     </a>
     <!-- スマホ用 -->
-    <div id="sp_button">
+    <div id="navToggle">
       <div>
         <span></span> <span></span> <span></span>
       </div>
@@ -41,10 +43,6 @@
           <li>
             <a class="menu menu_01" href="http://www.seijo.ac.jp/about/campus-life/club/kyudo/" TARGET="_blank">
               部活動紹介
-              <span id="menu_hover">
-                部活動紹介
-                </br>(大学HPへ)
-              </span>
             </a>
           </li>
           <li>
@@ -141,13 +139,7 @@
     <div class="side_contents">
       <h1 class="side-bar_title title_02">Twitter</h1>
       <div class="side-bar_description_02">
-
-
-<a class="twitter-timeline" data-chrome="noheader" href="https://twitter.com/seijo_kyudo2016">seijo_kyudo2016</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8" noheader></script>
-
-
-
-
+        <a class="twitter-timeline" data-chrome="noheader" data-chrome="scrollbar" href="https://twitter.com/seijo_kyudo2016">seijo_kyudo2016</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8" noheader></script>
       </div>
     </div>
   </div>
@@ -172,4 +164,3 @@
   </footer>
 </body>
 </html>
-</head>
