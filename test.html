@@ -8,31 +8,23 @@
   <meta http-equiv="Content-Script-Type" content="text/javascript">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="Content-Style-Type" content="text/css">
-  <script src="JavaScript/main.js"></script>
+  <script type="text/javascript" src="jQuery/jquery-3.1.0.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-    $(function() {
-      $('#navToggle').click(function(){//headerに .openNav を付加・削除
-          $('header').toggleClass('openNav');
-      });
-    });
-  </script>
   <title>成城大学体育会弓道部</title>
 </head>
 <body>
   <header>
   <!-- ぺージ上部のメニュー -->
-    <a href="http://www.geocities.jp/seijo_kyudo2000/">
+    <a class="no-line" href="http://www.geocities.jp/seijo_kyudo2000/">
       <img class="logo" src="img/header.jpg" alt="成城大学体育会弓道部">
     </a>
     <!-- スマホ用 -->
-    <div id="navToggle">
-      <div>
-        <span></span> <span></span> <span></span>
-      </div>
-    </div>
+    <a class="menu-trigger" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
     <!--スマホ用 ここまで-->
     <div class="header-contents">
       <div class="header-content-emblem">
@@ -119,19 +111,19 @@
       <h1 class="side-bar_title title_01">更新情報</h1>
       <div class="side-bar_description_01">
       <!-- 更新情報編集 (長くなるとHTMLごちゃっとするので最大５件まで) -->
-        <dt>2016/8/27</dt>
+        <dt>2016/9/11</dt>
           <dd>報告用掲示板更新</dd>
+
+        <dt>2016/9/9</dt>
+          <dd>報告用掲示板更新</dd>
+
+        <dt>2016/9/4</dt>
+          <dd>報告用掲示板、幹部紹介更新</dd>
 
         <dt>2016/8/27</dt>
           <dd>報告用掲示板更新</dd>
 
-        <dt>2016/8/27</dt>
-          <dd>報告用掲示板更新</dd>
-
-        <dt>2016/8/27</dt>
-          <dd>報告用掲示板更新</dd>
-
-        <dt>2016/8/27</dt>
+        <dt>2016/8/12</dt>
           <dd>報告用掲示板更新</dd>
       <!--// 更新情報編集ここまで -->
       </div>
@@ -139,7 +131,7 @@
     <div class="side_contents">
       <h1 class="side-bar_title title_02">Twitter</h1>
       <div class="side-bar_description_02">
-        <a class="twitter-timeline" data-chrome="noheader" data-chrome="scrollbar" href="https://twitter.com/seijo_kyudo2016">seijo_kyudo2016</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8" noheader></script>
+        <a class="twitter-timeline" data-chrome="noheader" href="https://twitter.com/seijo_kyudo2016">seijo_kyudo2016</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8" noheader></script>
       </div>
     </div>
   </div>
@@ -147,14 +139,13 @@
   <!-- トップ画像 -->
   <main>
     <SCRIPT language="JavaScript"> 
-    <!-- // ランダム に画像を表示する 
+     // ランダム に画像を表示する 
       img = new Array(); 
       img[0] = "img/gassyuku-top1.jpg"; 
       img[1] = "img/gassyuku-top2.jpg"; 
 
       n = Math.floor(Math.random()*img.length); 
       document.write("<img src ='"+img[n]+"' border='0'  width='100%'>");
-     //--> 
     </SCRIPT>
   </main>
   <!--// トップ画像ここまで -->
@@ -164,3 +155,21 @@
   </footer>
 </body>
 </html>
+<!-- スマホ、タブレット メニュー展開-->
+<script>
+$(document).ready(function() {
+  $('.menu-trigger').click(function () {
+    $(this).toggleClass('active');
+    $(this).next().toggleClass('onanimation');
+    $('ul li').hide();
+    $('ul li').each(function(i) {
+      $(this).delay(0 * i).fadeIn(400);
+    });
+  });
+  $('.menu-trigger').click(function(){
+    $('.header-content-menu').slideToggle();
+    return false;
+  });
+});
+</script>
+
