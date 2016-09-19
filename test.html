@@ -11,21 +11,29 @@
   <script type="text/javascript" src="jQuery/jquery-3.1.0.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-84329313-1', 'auto');
+    ga('send', 'pageview');
+  </script>
   <title>成城大学体育会弓道部</title>
 </head>
 <body>
+  <!-- ヘッダーメニュー -->
   <header>
-  <!-- ぺージ上部のメニュー -->
     <a class="no-line" href="http://www.geocities.jp/seijo_kyudo2000/">
       <img class="logo" src="img/header.jpg" alt="成城大学体育会弓道部">
     </a>
-    <!-- スマホ用 -->
+    <!-- 画面上部メニューボタン(≡) -->
     <a class="menu-trigger" href="#">
       <span></span>
       <span></span>
       <span></span>
     </a>
-    <!--スマホ用 ここまで-->
+    <!-- //画面上部メニューボタン(≡)ここまで -->
     <div class="header-contents">
       <div class="header-content-emblem">
         <img class="emblem" src="http://www.geocities.jp/seijo_kyudo2000/img/gakuenImgKosyo.png" alt="校章">
@@ -33,84 +41,89 @@
       <nav class="header-content-menu">
         <ul class="menu-list">
           <li>
-            <a class="menu menu_01" href="http://www.seijo.ac.jp/about/campus-life/club/kyudo/" TARGET="_blank">
+            <a class="menu color_01 move" href="http://www.seijo.ac.jp/about/campus-life/club/kyudo/" TARGET="_blank">
               部活動紹介
             </a>
           </li>
           <li>
-            <a class="menu menu_02" href="katudou2016.html">
+            <a class="menu color_02" href="katudou2016.html">
               活動日程
             </a>
           </li>
           <li>
-            <a class="menu menu_03" href="53-kanbu.html">
+            <a class="menu color_03" href="53-kanbu.html">
               幹部紹介
             </a>
           </li>
           <li>
-            <a class="menu menu_04" href="http://www1.ezbbs.net/39/seijo_kyudo/">
+            <a class="menu color_04" href="http://www1.ezbbs.net/39/seijo_kyudo/">
               報告用掲示板
             </a>
           </li>
           <li>
-            <a class="menu menu_05" href="http://9001.teacup.com/seijo_kyudo2000/bbs">
+            <a class="menu color_05" href="http://9001.teacup.com/seijo_kyudo2000/bbs">
               交流用掲示板
             </a>
           </li>
           <li>
-            <a class="menu menu_06" href="mailto:seijo_kyudo2000@yahoo.co.jp">
+            <a class="menu color_06" href="mailto:seijo_kyudo2000@yahoo.co.jp">
               お問合せ
             </a>
           </li>
           <li>
-            <a class="menu menu_07" href="for-sinnyusei.html">
+            <a class="menu color_01" href="for-sinnyusei.html">
               新入生の方へ
             </a>
           </li>
           <li>
-            <a class="menu menu_08" href="http://photozou.jp/photo/album/2470348"　TARGET="_blank">
+            <a class="menu color_02" href="http://photozou.jp/photo/album/2470348"　TARGET="_blank">
               写真館
             </a>
           </li>
           <li>
-            <a class="menu menu_09" href="http://seijokanbu.wordpress.com/"　TARGET="_blank">
+            <a class="menu color_03" href="http://seijokanbu.wordpress.com/"　TARGET="_blank">
               幹部ブログ
             </a>
           </li>
           <li>
-            <a class="menu menu_10" href="jisho.html">
+            <a class="menu color_04" href="jisho.html">
               弓道部辞書
             </a>
           </li>
           <li>
-            <a class="menu menu_11" href="link.html">
+            <a class="menu color_05" href="link.html">
               リンク
             </a>
           </li>
-          <li>
-          <ul class="sns-list">
+          <li class="menu_sns">
           <!-- Twitter-->
-              <a href="https://twitter.com/sharMe" class="twitter-share-button" data-url="http://www.geocities.jp/seijo_kyudo2000/" data-lang="ja">ツイート</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            <br />
+            <a target="_blank" href="http://twitter.com/share?url=http://www.geocities.jp/seijo_kyudo2000/&text=成城大学体育会弓道部HP">
+              <img class="sns-icon" src="img/top/twitter_icon.png" alt="ツイートする">
+            </a>
           <!-- Facebook-->
-              <iframe class="share" src="//www.facebook.com/plugins/like.php?href=http://www.geocities.jp/seijo_kyudo2000/;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" width="100" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
-            <br />
-          <!-- LINE
-              <a href="http://line.naver.jp/R/msg/text/?http://www.geocities.jp/seijo_kyudo2000/"><img  class="share" src="http://www.geocities.jp/seijo_kyudo2000/img/h26linebutton.png" width="80" height="20" alt="LINEで送る" /></a></p> -->
+            <a href="http://www.facebook.com/sharer.php?u=http://www.geocities.jp/seijo_kyudo2000/" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+              <img class="sns-icon" src="img/top/FB_icon.png" alt="シェアする">
+            </a>
           </li>
-          </ul>
         </ul>
       </nav>
     </div>
   </header>
-  <!--// ぺージ上部のメニューここまで -->
+  <!--// ヘッダーメニューここまで -->
   <!-- ぺージ左側の情報 -->
   <div class="side">
     <div class="side_contents">
       <h1 class="side-bar_title title_01">更新情報</h1>
       <div class="side-bar_description_01">
       <!-- 更新情報編集 (長くなるとHTMLごちゃっとするので最大５件まで) -->
+        <dt>2016/9/19</dt>
+          <dd>サイトリニューアル</dd>
+          <dd>スマホ、タブレット対応開始</dd>
+          <dd>Twitterリンク追加</dd>
+
+        <dt>2016/9/18</dt>
+          <dd>報告用掲示板更新</dd>
+
         <dt>2016/9/11</dt>
           <dd>報告用掲示板更新</dd>
 
@@ -119,12 +132,6 @@
 
         <dt>2016/9/4</dt>
           <dd>報告用掲示板、幹部紹介更新</dd>
-
-        <dt>2016/8/27</dt>
-          <dd>報告用掲示板更新</dd>
-
-        <dt>2016/8/12</dt>
-          <dd>報告用掲示板更新</dd>
       <!--// 更新情報編集ここまで -->
       </div>
     </div>
@@ -136,27 +143,38 @@
     </div>
   </div>
   <!--// ぺージ左側の情報ここまで -->
-  <!-- トップ画像 -->
+  <!-- 写真 -->
   <main>
-    <SCRIPT language="JavaScript"> 
-     // ランダム に画像を表示する 
-      img = new Array(); 
-      img[0] = "img/gassyuku-top1.jpg"; 
-      img[1] = "img/gassyuku-top2.jpg"; 
-
-      n = Math.floor(Math.random()*img.length); 
+    <SCRIPT language="JavaScript">
+     // 表示したい画像を以下の「""」の間に入れる
+      img = new Array();
+      img[0] = "img/gassyuku-top1.jpg";
+      img[1] = "img/gassyuku-top2.jpg";
+     // ランダム に画像を表示する
+      n = Math.floor(Math.random()*img.length);
       document.write("<img src ='"+img[n]+"' border='0'  width='100%'>");
     </SCRIPT>
   </main>
-  <!--// トップ画像ここまで -->
+  <!--// 写真ここまで -->
   <!-- フッター -->
   <footer>
-    Copyright(C) <a href="seijo_kyudo2000@yahoo.co.jp">SEIJO Univ. Kyudo-Club</a>. All rights reserved.
+    <!--的アニメーション -->
+    <div class="footer_animation">
+      <img id="arrow" class="arrow_img" src='img/top/arrow.png' alt=''>
+      <img id="target" class="target_img" src='img/top/target.png' alt='' onclick="ga('send', 'event', 'animation', 'click', 'kyudo_animation');">
+    </div>
+    <!--// 的アニメーションここまで -->
+    <div class="copyright">
+      Copyright(C) SEIJO Univ. Kyudo-Club. All rights reserved.
+    </div>
   </footer>
+  <!--// フッターここまで -->
 </body>
 </html>
-<!-- スマホ、タブレット メニュー展開-->
+
+<!-- 以下HP内の動きに関すること -->
 <script>
+// 画面上部メニューボタン(≡)
 $(document).ready(function() {
   $('.menu-trigger').click(function () {
     $(this).toggleClass('active');
@@ -171,5 +189,38 @@ $(document).ready(function() {
     return false;
   });
 });
-</script>
 
+// 的アニメーション（ランダム表示）
+$('#target').click(function () {
+  var w = $('.footer_animation').width();
+  //距離
+  target_distance = new Array();
+  if (w > 881 || w == 820){
+    target_distance[0] = '1.03';
+    target_distance[1] = '1.025';
+    target_distance[2] = '1.0248';
+    target_distance[3] = '1.02';
+    target_distance[4] = '1.018';
+  }else{
+    target_distance[0] = '0.995';
+    target_distance[1] = '0.99';
+    target_distance[2] = '0.98';
+    target_distance[3] = '0.97';
+    target_distance[4] = '0.968';
+  }
+  d = Math.floor(Math.random()*target_distance.length); 
+　//高さ
+  target_height = new Array();
+  target_height[0] = '30';
+  target_height[1] = '35';
+  target_height[2] = '38';
+  target_height[3] = '40';
+  target_height[4] = '45';
+  target_height[5] = '50';
+  h = Math.floor(Math.random()*target_height.length); 
+　//的までの座標
+  $('#arrow').css({
+    'transform': 'translate( ' + w*target_distance[d] + 'px ,' + target_height[h] +'px)'
+  });
+});
+</script>

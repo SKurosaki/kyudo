@@ -1,14 +1,19 @@
 
+/*--------------------
+     HP内共通設定
+--------------------*/
+/* -- HP全体 -- */
 body{
   text-align: center;
-  background-color:#525C91;
+  background-color: #525C91;
   color: #333;
   font-family: "ＭＳ Ｐゴシック",sans-serif;
+  width: 100%;
 }
 
 /*リンク関連*/
-a{/*リンクされた文字*/
-  color: #0000ff;
+a{/*リンクが張られた文字*/
+  color: #4169E1;
   text-decoration: underline;
 }
 a:link {/*未訪問のリンク*/
@@ -27,8 +32,26 @@ a:active {/*クリック中*/
   text-decoration: none;
 }
 
+/* -- ヘッダー -- */
+/*下線なし*/
+header .no-line{
+  text-decoration: none;
+}
 
-/* 更新履歴リスト*/
+/* -- サイドメニュー -- */
+/* サイドメニュー:見出し */
+.side-bar_title{
+  background-color: #070F3A;
+  color: #FFF;
+  font-size: 20px;
+  font-family: 'ゴシック';
+  padding: 5px;
+  margin: 0 auto;
+}
+.side_contents{
+  background-color: #fff;
+}
+/* 更新情報 */
 dt {
   margin: 0 0 0 20px;
   padding: 0;
@@ -43,42 +66,27 @@ dd {
   line-height: 1.5em;
 }
 
-/* フッターのアドレス*/
-.address{
-  clear: left;
-}
-
-
-
-
-
-
-/* newwwwwwww */
-
-/*ーーーーーーーー
-　　　　PC
-ーーーーーーーー*/
-
-.body{
-  width: 100%;
-}
-/*ヘッダー*/
+/*--------------------
+　　　　PC用設定
+--------------------*/
+/* -- ヘッダー（上） --*/
 header{
   width: 1010px;
   background-color: #070F3A;
   margin: 0 0 0 30px;
 }
-header .no-line{
-  text-decoration: none;
-}
+
+/*ロゴ*/
 .logo{
   width: 600px;
   margin: 0 auto;
 }
+
 .header-contents{
   width: 950px;
   margin: 0;
 }
+
 /*校章*/
 .header-content-emblem{
   float: left;
@@ -89,7 +97,8 @@ header .no-line{
 .emblem{
   margin: 18px auto;
  }
-/*上部メニューバー*/
+
+/* メニューバー */
 .header-content-menu{
   display: block;
   background-color: #fff;
@@ -99,17 +108,7 @@ header .no-line{
   text-align: left;
   margin: 0 0 0 240px;
 }
-.menu-list{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 770px;
-}
-.sns-list{
-  text-align: left;
-  display: list-item;
-  padding: 0px;
-}
+
 .header-content-menu li{
   display: inline-block!important;
   padding: 0;
@@ -119,7 +118,26 @@ header .no-line{
   text-decoration: none;
   margin: 0 auto;
 }
-/*上部メニューバー：メニューボタン*/
+.menu-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 770px;
+}
+/* メニューバー:SNS関係 */
+.menu_sns{
+  height: 65px;
+  width: 120px;
+  position: absolute;
+  text-align: left;
+  padding: 12px 1px 0;
+}
+.sns-icon{
+  width: 30px;
+  padding: 10px 0 0;
+  margin: 0 -10px 0 10px;
+}
+/* メニューバー:メニューボタン */
 .menu {
   display: inline-block;
   width: 120px !important;
@@ -133,7 +151,6 @@ header .no-line{
   position: relative;
   z-index: 2;
   background-color: #fff;
-  color: #333;
   line-height: 50px;
   overflow: hidden;
 }
@@ -161,94 +178,46 @@ header .no-line{
   }
   .menu:hover::after {
     top: 0;
-    background-color: #525C91;
+  }
+  /* メニューバー:メニューボタン:色 */
+  .color_01:hover::after {
+    background-color: #3399ff;
+  }
+  .color_02:hover::after {
+    background-color: #2d89e5;
+  }
+  .color_03:hover::after {
+    background-color: #287acc;
+  }
+  .color_04:hover::after {
+    background-color: #236bb3;
+  }
+  .color_05:hover::after {
+    background-color: #1e5b99;
+  }
+  .color_06:hover::after {
+    background-color: #194c80;
   }
 
-/*上部メニュー色*/
-  .menu_01:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_02:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_03:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_04:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_05:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_06:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_07:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_08:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_09:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_10:hover::after {
-    background-color: #3399ff;
-  }
-  .menu_11:hover::after {
-    background-color: #3399ff;
-  }
-
-
-
-menu_01{
-  word-wrap: break-word;
-}
-
-
-.sns{
-  clear: left;
-  display: block;
-}
-.sns-list{
-    width: 120px;
-    height: 65px;
-    display: table;
-}
-.share{
-  width: 100%;
-  height: 100%;
-}
-
-/* 左側情報 */
+/* -- サイドバー（左） --*/
 .side{
   float: left;
   width: 240px;
   margin: 0 0 0 30px;
 }
 
-.side-bar_title{
-  background-color: #070F3A;
-  color: #FFF;
-  font-size: 23px;
-  font-family: ヒラギノ;
-  padding: 5px;
-  margin: 0 auto;
-}
-
-.side_contents{
-  background-color: #fff;
-}
-
+/* 更新情報 */
 .side-bar_description_01{
   font-size: 10px;
-  font-family: ヒラギノ;
+  font-family: 'ゴシック';
   text-align: left;
-  height: 152px;
+  height: 158px;
   overflow: scroll; 
   overflow-x: hidden;
   background-color: #fff;
 }
+
+/* Twitter（弓道部アカウント） */
 .side-bar_description_02{
   height: 360px;
   overflow: scroll;
@@ -256,7 +225,7 @@ menu_01{
   background-color: #fff;
 }
 
-/* メイン */
+/* -- メイン（右） --*/
 main{
   float: left;
   background-color: #525C91;
@@ -265,403 +234,517 @@ main{
   padding: 0;
 }
 
-/* フッター */
+/* -- フッター（下） --*/
 footer{
   clear: left;
   width: 1010px;
   margin: 0 0 0 30px;
 }
 
+/* 的アニメーション */
+.footer_animation{
+width: 100%;
+height: 50px;
+}
+#arrow{
+  width: 50px;
+  left: -50px;
+  transition: all 0.3s ease-in-out;
+}
+.arrow_img{
+  z-index: 3;
+  right: 0;
+  position: absolute;
+}
+ .target_img{
+  width: 30px;
+  float: right;
+  top: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+/* コピーライト */
+.copyright{
+  margin: 0px 0 50px;
+}
+
 /*ーーーーーーーー
 　　PC~tablet
 ーーーーーーーー*/
 @media screen and (max-width:1073px){
-  /* ヘッダー */
+/* -- ヘッダー（上） --*/
   header {
     width: 820px;
     margin: 0 0 0 20px;
   }
-  /* 校章 非表示 */
+
+  /* 校章（非表示） */
   .header-content-emblem{
     display: none;
   }
 
-  /* 上部メニューバー */
- .header-contents {
+  /* メニューバー */
+  .header-contents {
     width: 0;
     margin: 0;
-}
+  }
   .header-content-menu{
+    display: inline-block;
     width: 820px;
     height: 135px;
     padding: 0;
     margin: 0 auto;
     text-align: left;
-}
-
-.menu {
-  display: inline-block;
-  width: 120px !important;
-  height: 60px  !important;
-  text-align: left;
-  text-decoration: none;
-  font-size: 14px;
-  text-indent: 5px;
-  line-height: 60px;
-  outline: none;
-  position: relative;
-  z-index: 2;
-  background-color: #fff;
-  color: #333;
-  line-height: 50px;
-  overflow: hidden;
-}
- .menu-list{
-   list-style-type: none;
-   width: 820px;
-   margin: 0 auto;
-   text-align: center;
- }
+  }
+  /* メニューバー:メニューボタン */
+  .menu {
+    height: 60px !important;
+  }
+  .menu-list{
+    width: 820px;
+    text-align: left;
+    padding: 6px 0 0;
+    margin: 0 40px;
+  }
   .header-content-menu li{
-    display: inline-block!important;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .header-content-menu a{
-    text-decoration: none;
     margin: 0 auto;
   }
-.sns-list{
-    display: inline-block!important;
-    margin: 0 auto;
-    padding: 0;
-}
-.sns{
-  clear: left;
-  display: block;
+  /* メニューバー:SNS関係 */
+  .menu_sns{
+    height: 60px;
+  }
+
+/* -- サイドバー（左） --*/
+  .side{
+    width: 210px;
+    margin: 0 0 0 20px;
+  }
+
+  /* Twitter（弓道部アカウント） */
+  .side-bar_description_02{
+    height: 240px;
+  }
+
+/* -- メイン（右） --*/
+  main{
+    width: 610px;
+    height: 458px;
+  }
+
+/* -- フッター（下） --*/
+  footer{
+    width: 820px;
+    margin: 0 0 0 20px;
+  }
+
+  /* 的アニメーション */
+  .footer_animation{
+  width: 100%;
+  height: 50px;
+  }
+
 }
 
-/* 左側情報 */
-.side{
-  width: 210px;
-  margin: 0 0 0 20px;
-}
-.side-bar_description_02{
-  height: 240px;
-}
-
-/* メイン */
-main{
-  width: 610px;
-  height: 458px;
-}
-
-}
 /*ーーーーーーーー
 　　tablet
 ーーーーーーーー*/
 @media screen and (max-width:881px){
-
-body{
-  width: 100%;
-  margin: 0;
-}
-
-/*ヘッダー*/
-header{
-  z-index: 4;
-  width: 100%;
-  height: 87px;
-  margin: 0;
-  background-color: #070F3A;
-}
-header .logo{
-  width: 90%;
-}
-/*画面上部メニューボタン(≡)*/
-.menu-trigger,
-.menu-trigger span {
-  display: inline-block;
-  transition: all .4s;
-  box-sizing: border-box;
-}
-.menu-trigger {
-  position: relative;
-  width: 55px;
-  height: 55px;
-  right: 25px;
-  margin: 15px 0;
-}
-.menu-trigger span {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  height: 4px;
-  background-color: #fff;
-  border-radius: 4px;
-}
-.menu-trigger span:nth-of-type(1) {
-  top: 5px;
-}
-.menu-trigger span:nth-of-type(2) {
-  top: 25px;
-}
-.menu-trigger span:nth-of-type(3) {
-  bottom: 5px;
-}
-.menu-trigger.active span:nth-of-type(1) {
-  -webkit-transform: translateY(20px) rotate(-45deg);
-  transform: translateY(23px) rotate(-45deg);
-}
-.menu-trigger.active span:nth-of-type(2) {
-  left: 200%;
-  opacity: 0;
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
-  -webkit-animation: active-menu-bar02 .8s forwards;
-  animation: active-menu-bar02 .8s forwards;
-  overflow: hidden;
-}
-@-webkit-keyframes active-menu-bar02 {
-  100% {
-  height: 0;
+/* -- HP全体 -- */
+  body{
+    margin: 0;
   }
-}
-@keyframes active-menu-bar02 {
-  100% {
-  height: 0;
+
+/* -- ヘッダー（上） --*/
+  header{
+    z-index: 4;
+    width: 100%;
+    height: 90px;
+    margin: 0;
   }
-}
-.menu-trigger.active span:nth-of-type(3) {
-  -webkit-transform: translateY(-20px) rotate(45deg);
-  transform: translateY(-17px) rotate(45deg);
-}
-/*メニュー一覧*/
 
-.header-contents{
-  width: 100%;
-  margin: 0;
-}
+  /*ロゴ*/
+  header .logo{
+    margin: 10px 30px;
+    width: 460px;
+  }
 
-.header-content-menu{
-  display: none;
-  width: 100%;
-  padding: 0;
-  text-align: left;
-  margin: 0;
-}
-.menu-list{
-  list-style-type: none;
-  margin:  0;
-  padding: 0;
-  width: 100%;
-}
-/*上部メニューバー：メニューボタン*/
-.menu {
-  display: block;
-  width: 100% !important;
-  height: 65px  !important;
-  text-align: left;
-  text-decoration: none;
-  font-size: 23px;
-  z-index: 5;
-  opacity: 0.95;
-  line-height: 50px;
-  padding: 2% 0 0 0;
-}
-  .menu,
-  .menu::before,
-  .menu::after {
+  /*画面上部メニューボタン(≡)*/
+  .menu-trigger,
+  .menu-trigger span {
+    display: inline-block;
+    transition: all .4s;
     box-sizing: border-box;
-    -webkit-transition: inherit;
-    transition: inherit;
-    top: 0;
-    width: 0;
-    height: 0;
-    color: #070F3A;
   }
-.header-content-menu li{
-  display: block !important;
-}
+  .menu-trigger {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    right: 25px;
+    margin: 15px 0;
+  }
+  .menu-trigger span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  .menu-trigger span:nth-of-type(1) {
+    top: 5px;
+  }
+  .menu-trigger span:nth-of-type(2) {
+    top: 25px;
+  }
+  .menu-trigger span:nth-of-type(3) {
+    bottom: 5px;
+  }
+  .menu-trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    transform: translateY(23px) rotate(-45deg);
+  }
+  .menu-trigger.active span:nth-of-type(2) {
+    left: 200%;
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    -webkit-animation: active-menu-bar02 .8s forwards;
+    animation: active-menu-bar02 .8s forwards;
+    overflow: hidden;
+  }
+  @-webkit-keyframes active-menu-bar02 {
+    100% {
+    height: 0;
+    }
+  }
+  @keyframes active-menu-bar02 {
+    100% {
+    height: 0;
+    }
+  }
+  .menu-trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-17px) rotate(45deg);
+  }
+
+  /* メニューバー:メニュー一覧 */
+  .header-contents{
+    width: 100%;
+    margin: 0;
+  }
+  .header-content-menu{
+    display: none;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  .menu-list{
+    list-style-type: none;
+    margin:  0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+  }
+
+/*上部メニューバー:メニューボタン*/
+  .menu {
+    display: block;
+    width: 100% !important;
+    height: 65px  !important;
+    font-size: 23px;
+    z-index: 5;
+    opacity: 0.95;
+    line-height: 50px;
+    padding: 15px 0 0 60px;
+    border-bottom: 1px solid #333;
+  }
+    .menu:hover {
+      color: #ccc;
+    }
+    .menu,
+    .menu::before,
+    .menu::after {
+      box-sizing: border-box;
+      -webkit-transition: inherit;
+      transition: inherit;
+      top: 0;
+      width: 0;
+      height: 0;
+      color: #070F3A;
+    }
+  .header-content-menu li{
+    display: block !important;
+    margin: 0 auto;
+  }
+  /* メニューバー:メニューボタン:色 */
   .header-content-menu a{
   color: #070F3A;
-}
-.header-content-menu{
-  float: left;
-  background-color: #525C91;
-}
-.sns-list{
-  list-style-type: none;
-  margin: -5px 0 0;
-  padding: 0;
-  width: 100%;
+  }
+  /* メニューバー:SNS関係 */
+  .menu_sns {
+    display: block;
+    width: 100% !important;
+    height: 100%;
+    text-align: left;
+    text-decoration: none;
+    font-size: 23px;
+    z-index: 5;
+    opacity: 0.95;
+    line-height: 50px;
+    padding: 2% 0 0 0;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  .sns-icon{
+    margin: 5px -33px 0 68px;
+    width: 45px;
+  }
+
+/* -- サイドバー（下） --*/
+  .side {
+    width: 100% !important;
+    background-color: #525C91;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    top: 675px;
+  }
+  .side_contents{
+    margin: 10px 10px 0;
+    width: 45%;
+    height: 295px;
+    vertical-align: top;
+    display: inline-block;
+  }
+  .side-bar_title{
+    height: 33px;
+    padding: 3px auto;
+  }
+
+  /* 更新情報 */
+  .side-bar_description_01{
+    height: 250px;
+  }
+
+  /* Twitter（弓道部アカウント） */
+  .side-bar_description_02{
+    height: 250px;
+    margin: 0 auto;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+/* -- メイン（上） --*/
+  main{
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    position: absolute;
+  }
+
+  /* 写真 */
+  main img{
+    max-height: 591px;
+  }
+
+/* -- フッター（下） --*/
+  footer{
+    z-index: 3;
+    display: block;
+    width: 100%;
+    margin: 0;
+    top: 960px;
+    position: absolute;
+  }
+
+  /* 的アニメーション */
+  .footer_animation{
+    width: 85%;
+  }
+  #arrow{
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* コピーライト */
+  .copyright {
+    padding: 0 0 50px;
+    margin: -12px 0 0 0;
+  }
+
 }
 
-
-/* 左側情報 */
-.side {
-  width: 100% !important;
-  background-color: #525C91;
-  margin: 0;
-  z-index: 1;
-  position: absolute;
-  top: 675px;
-}
-.side_contents{
-  margin: 10px 10px 0;
-  width: 45%;
-  height: 295px;
-  vertical-align: top;
-  display: inline-block;
-}
-
-.side-bar_title{
-  height: 33px;
-  padding: 3px auto;
-}
-
-.side-bar_description_01{
-  height: 250px;
-}
-.side-bar_description_02{
-  height: 250px;
-  margin: 0 auto;
-  overflow:scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* メイン */
-main{
-  width: 100%;
-  margin: 0;
-  z-index: 2;
-  position: absolute;
-}
-
-/* フッター */
-footer{
-  z-index: 3;
-  display: block;
-  width: 100%;
-  margin: 0;
-  top: 1000px;
-  position: absolute;
-}
-
-}
 /*ーーーーーーーー
 　smartphone
 ーーーーーーーー*/
 @media screen and (max-width:620px){
-header{
-  height: 50px;
-}
-.logo{
-  width: 300px;
-  margin: 0 0 16px;
-}
+/* -- ヘッダー（上） --*/
+  header{
+    height: 40px;
+  }
+  /*ロゴ*/
+  header .logo{
+    width: 270px;
+    padding: 4px;
+    display: inline-block;
+    margin: 0 30px;
+  }
 
 /*画面上部メニューボタン(≡)*/
-.menu-trigger {
-  position: relative;
-  width: 26px;
-  height: 25px;
-  right: 10px;
-  margin: 0 0 27px 0;
-}
-
-.menu-trigger span:nth-of-type(1) {
-  top: 0px;
-}
-.menu-trigger span:nth-of-type(2) {
-  top: 10px;
-}
-.menu-trigger span:nth-of-type(3) {
-  bottom: 0px;
-}
-.menu-trigger.active span:nth-of-type(1) {
-  transform: translateY(10px) rotate(-45deg);
-}
-
-.menu-trigger.active span:nth-of-type(2) {
-  -webkit-transform: translateY(2px);
-  transform: translateY(2px);
-}
-
-.menu-trigger.active span:nth-of-type(3) {
-  transform: translateY(-11px) rotate(45deg);
-}
-
-
-body{
-  margin: 0;
-  width: 100%;
-}
-
-.header-content-menu{
-  width: 100%;
-}
-
-/*上部メニューバー：メニューボタン*/
-.menu {
-  width: 100% !important;
-  height: 40px  !important;
-  text-align: left;
-  text-decoration: none;
-  font-size: 15px;
-  z-index: 5;
-  opacity: 0.95;
-  line-height: 50px;
-  padding: 0 0 0 50px;
-  padding-bottom: .5em;
-  border-bottom: 1px solid #ccc;
-}
-
-
-.menu-list{
-  margin: -20px auto;
-}
-
-main{
-  width: 100%;
-  height: auto;
-  margin: 0 !important;
-  position: absolute;
-  display: block;
-  z-index: 2;
-}
-.side{
-  width: 100%;
-  margin: 75% 0 0;
-  background-color: #525C91;
-  display: block;
-  top: 10% !important;
-  z-index: 3;
-}
-
-.side_contents{
-  width: 90%;
-  margin: 0 auto;
-}
-
-.side-bar_description_01{
-  height: 250px;
-  background-color: #fff;
-  display: block;
-}
-.side-bar_description_02{
-  height: 300px;
-  margin: 0 auto;
-  display: block;
-}
-
-footer{
-  width:100%;
-  text-align: center;
-  font-size: 10px;
-  margin: 0;
-  z-index: 4;
-  position: relative;
-}
-
+  .menu-trigger {
+    position: relative;
+    width: 26px;
+    height: 25px;
+    right: 10px;
+    top: -6px;
+    position: absolute;
   }
+  .menu-trigger span:nth-of-type(1) {
+    top: 0px;
+  }
+  .menu-trigger span:nth-of-type(2) {
+    top: 10px;
+  }
+  .menu-trigger span:nth-of-type(3) {
+    bottom: 0px;
+  }
+  .menu-trigger.active span:nth-of-type(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  .menu-trigger.active span:nth-of-type(2) {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  .menu-trigger.active span:nth-of-type(3) {
+    transform: translateY(-11px) rotate(45deg);
+  }
+
+  .header-content-menu{
+    width: 100%;
+    top: 40px;
+    position: absolute;
+  }
+
+  /*上部メニューバー:メニューボタン*/
+  .menu {
+    width: 100% !important;
+    height: 50px  !important;
+    text-align: left;
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 5;
+    opacity: 0.95;
+    line-height: 50px;
+    padding: 0 0 0 50px;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #ccc;
+  }
+  /* メニューバー:SNS関係 */
+  .menu_sns {
+    width: 100% !important;
+    height: 50px !important;
+    text-align: left;
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 5;
+    opacity: 0.95;
+    line-height: 50px;
+    padding: 0 0 0 50px;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #ccc;
+}
+  .sns-icon{
+    width: 35px;
+    margin: 0 -46px 0 55px;
+  }
+
+  .menu-list{
+    position: absolute;
+    top: 0px;
+  }
+
+/* -- メイン（上） --*/
+  main{
+    width: 100%;
+    height: auto;
+    margin: 0 !important;
+    position: absolute;
+    display: block;
+    z-index: 2;
+  }
+
+/* -- サイドバー（下） --*/
+  .side{
+    width: 100%;
+    margin: 75% 0 0;
+    background-color: #525C91;
+    display: block;
+    top: 10% !important;
+    z-index: 3;
+    height: 650px;
+  }
+  .side_contents{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* 更新情報 */
+  .side-bar_description_01{
+    height: 250px;
+    background-color: #fff;
+    display: block;
+  }
+
+  /* Twitter（弓道部アカウント） */
+  .side-bar_description_02{
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+/* -- フッター（下） --*/
+  footer{
+    width:100%;
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    z-index: 4;
+    position: relative;
+  }
+
+  /* 的アニメーション */
+  .footer_animation{
+    position: absolute;
+    bottom: 100px;
+    width: 95%;
+  }
+  #arrow{
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* コピーライト */
+  .copyright {
+    font-size: 10px;
+    padding: 70px 0 83px;
+  }
+
+}
+/*ーーーーーーーー
+　iphone 5 SE
+ーーーーーーーー*/
+@media screen and (max-width:320px){
+/* -- ヘッダー（上） --*/
+  header .logo{
+    width: 200px;
+    margin: 0 auto;
+    padding: 3px 15px 0 0;
+  }
+
+/* -- フッター（下） --*/
+  .copyright {
+    font-size: 8px;
+    padding: 0 0 83px;
+  }
+
+}
